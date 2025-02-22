@@ -1,0 +1,4 @@
+.venv
+proxies.json
+.idea
+__pycache__/
