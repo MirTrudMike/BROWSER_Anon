@@ -1,6 +1,6 @@
 {
   "ru": {
-    "windows": [
+    "Win64": [
       {
         "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
         "screen_size": [1920, 1080],
@@ -52,7 +52,7 @@
         "language": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7"
       }
     ],
-    "mac": [
+    "MacIntel": [
       {
         "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
         "screen_size": [2560, 1600],
@@ -104,7 +104,7 @@
         "language": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7"
       }
     ],
-    "linux": [
+    "Linux x86_64": [
       {
         "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/109.0",
         "screen_size": [1920, 1080],
@@ -262,7 +262,7 @@
     ]
   },
   "ge": {
-    "windows": [
+    "Win64": [
       {
         "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
         "screen_size": [1920, 1080],
@@ -314,7 +314,7 @@
         "language": "ka-GE,ka;q=0.9,en-US;q=0.8,en;q=0.7"
       }
     ],
-    "mac": [
+    "MacIntel": [
       {
         "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
         "screen_size": [2560, 1600],
@@ -366,7 +366,7 @@
         "language": "ka-GE,ka;q=0.9,en-US;q=0.8,en;q=0.7"
       }
     ],
-    "linux": [
+    "Linux x86_64": [
       {
         "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/109.0",
         "screen_size": [1920, 1080],
@@ -524,7 +524,7 @@
     ]
   },
   "il": {
-    "windows": [
+    "Win64": [
       {
         "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
         "screen_size": [1920, 1080],
@@ -576,7 +576,7 @@
         "language": "he-IL,he;q=0.9,en-US;q=0.8,en;q=0.7"
       }
     ],
-    "mac": [
+    "MacIntel": [
       {
         "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
         "screen_size": [2560, 1600],
@@ -628,7 +628,7 @@
         "language": "he-IL,he;q=0.9,en-US;q=0.8,en;q=0.7"
       }
     ],
-    "linux": [
+    "Linux x86_64": [
       {
         "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/109.0",
         "screen_size": [1920, 1080],
@@ -786,7 +786,7 @@
     ]
   },
   "ae": {
-    "windows": [
+    "Win64": [
       {
         "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
         "screen_size": [1920, 1080],
@@ -838,7 +838,7 @@
         "language": "ar-AE,ar;q=0.9,en-US;q=0.8,en;q=0.7"
       }
     ],
-    "mac": [
+    "MacIntel": [
       {
         "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
         "screen_size": [2560, 1600],
@@ -890,7 +890,7 @@
         "language": "ar-AE,ar;q=0.9,en-US;q=0.8,en;q=0.7"
       }
     ],
-    "linux": [
+    "Linux x86_64": [
       {
         "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/109.0",
         "screen_size": [1920, 1080],
@@ -1048,7 +1048,7 @@
     ]
   },
   "de": {
-    "windows": [
+    "Win64": [
       {
         "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
         "screen_size": [1920, 1080],
@@ -1100,7 +1100,7 @@
         "language": "de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7"
       }
     ],
-    "mac": [
+    "MacIntel": [
       {
         "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
         "screen_size": [2560, 1600],
@@ -1152,7 +1152,7 @@
         "language": "de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7"
       }
     ],
-    "linux": [
+    "Linux x86_64": [
       {
         "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/109.0",
         "screen_size": [1920, 1080],
@@ -1310,7 +1310,7 @@
     ]
   },
   "gb": {
-    "windows": [
+    "Win64": [
       {
         "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
         "screen_size": [1920, 1080],
@@ -1362,7 +1362,7 @@
         "language": "en-GB,en;q=0.9,en-US;q=0.8,en;q=0.7"
       }
     ],
-    "mac": [
+    "MacIntel": [
       {
         "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
         "screen_size": [2560, 1600],
@@ -1414,7 +1414,7 @@
         "language": "en-GB,en;q=0.9,en-US;q=0.8,en;q=0.7"
       }
     ],
-    "linux": [
+    "Linux x86_64": [
       {
         "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/109.0",
         "screen_size": [1920, 1080],
@@ -1572,7 +1572,7 @@
     ]
   },
   "tr": {
-    "windows": [
+    "Win64": [
       {
         "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
         "screen_size": [1920, 1080],
@@ -1624,7 +1624,7 @@
         "language": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7"
       }
     ],
-    "mac": [
+    "MacIntel": [
       {
         "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
         "screen_size": [2560, 1600],
@@ -1676,7 +1676,7 @@
         "language": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7"
       }
     ],
-    "linux": [
+    "Linux x86_64": [
       {
         "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/109.0",
         "screen_size": [1920, 1080],
@@ -1834,7 +1834,7 @@
     ]
   },
   "us": {
-    "windows": [
+    "Win64": [
       {
         "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
         "screen_size": [1920, 1080],
@@ -1886,7 +1886,7 @@
         "language": "en-US,en;q=0.9"
       }
     ],
-    "mac": [
+    "MacIntel": [
       {
         "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
         "screen_size": [2560, 1600],
@@ -1938,7 +1938,7 @@
         "language": "en-US,en;q=0.9"
       }
     ],
-    "linux": [
+    "Linux x86_64": [
       {
         "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/109.0",
         "screen_size": [1920, 1080],
@@ -2096,7 +2096,7 @@
     ]
   },
   "fr": {
-    "windows": [
+    "Win64": [
       {
         "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
         "screen_size": [1920, 1080],
@@ -2148,7 +2148,7 @@
         "language": "fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7"
       }
     ],
-    "mac": [
+    "MacIntel": [
       {
         "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
         "screen_size": [2560, 1600],
@@ -2200,7 +2200,7 @@
         "language": "fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7"
       }
     ],
-    "linux": [
+    "Linux x86_64": [
       {
         "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/109.0",
         "screen_size": [1920, 1080],

@@ -5,6 +5,7 @@ import json
 import os
 import requests
 import random
+from browser_configuration import make_config
 
 
 def read_country_config_file():
@@ -86,15 +87,15 @@ def get_country_config(country):
     proxy_info = find_proxy(country)
 
     user_agents_data = read_country_config_file()
-    random_systems = random.choice(['windows', 'mac', 'linux'])
+    random_systems = random.choice(['Win64', 'MacIntel', 'Linux x86_64'])
     random_user_agent_kit = random.choice(user_agents_data[country][random_systems])
 
     config.update({'proxy_info': proxy_info,
+                   'system': random_systems,
                    'user_agent': random_user_agent_kit['user_agent'],
                    'screen_size': random_user_agent_kit['screen_size'],
                    'language': random_user_agent_kit['language']})
     return config
-
 
 
 async def start_browser(country):
@@ -104,12 +105,26 @@ async def start_browser(country):
     proxy_info = country_based_config['proxy_info']
 
     # Стандартные параметры браузера
+    system = country_based_config['system']
     user_agent = country_based_config['user_agent']
     screen_size = country_based_config['screen_size']
     timezone = country_based_config['proxy_info']['timezone']
     language = country_based_config['language']
     latitude = country_based_config['proxy_info']['location']['latitude']
     longitude = country_based_config['proxy_info']['location']['longitude']
+
+    if "Chrome" in user_agent:
+        browser_type = "Chrome"
+    elif "Edg" in user_agent or "Edge" in user_agent:
+        browser_type = "Edge"
+    elif "Firefox" in user_agent:
+        browser_type = "Firefox"
+    elif "Safari" in user_agent:
+        browser_type = "Safari"
+    else:
+        browser_type = "Chrome"
+
+    config = make_config(system=system, browser=browser_type)
 
     # Запуск браузера с Playwright
     async with async_playwright() as p:
@@ -132,236 +147,248 @@ async def start_browser(country):
 
         # Создание новой страницы и добавление скриптов для подмены характеристик
         page = await context.new_page()
-        await page.add_init_script("""
+        await page.add_init_script(f"""
             // Подмена свойств браузера для маскировки
-            Object.defineProperty(navigator, 'webdriver', {get: () => undefined});
-            Object.defineProperty(navigator, 'hardwareConcurrency', {get: () => 8});
-            Object.defineProperty(navigator, 'deviceMemory', {get: () => 16});
+            Object.defineProperty(navigator, 'webdriver', {{get: () => undefined}});
+            Object.defineProperty(navigator, 'hardwareConcurrency', {{get: () => {config['hardware']['hardwareConcurrency']}}});
+            Object.defineProperty(navigator, 'deviceMemory', {{get: () => {config['hardware']['deviceMemory']}}});
         """)
 
         # # Подмена WebRTC, чтобы скрыть локальные IP
-        await page.add_init_script("""
-        (() => {
-            const getLocalIPs = (callback) => {
-                const ips = ["192.168.1.1", "10.0.0.1", "fd12:3456:789a:1::1"]; // Фейковые IP
+        local_ip_set = config['local_ip_set']
+        await page.add_init_script(f"""
+        (() => {{
+            const getLocalIPs = (callback) => {{
+                const ips = ["{local_ip_set[0]}", "{local_ip_set[1]}", "{local_ip_set[2]}"]; // Фейковые IP
                 callback(ips);
-            };
+            }};
 
-            class FakeRTCPeerConnection extends RTCPeerConnection {
-                constructor(config) {
+            class FakeRTCPeerConnection extends RTCPeerConnection {{
+                constructor(config) {{
                     super(config);
-                }
+                }}
 
-                createOffer(...args) {
-                    return super.createOffer(...args).then((offer) => {
+                createOffer(...args) {{
+                    return super.createOffer(...args).then((offer) => {{
                         offer.sdp = offer.sdp.replace(
-                            /([0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3})/g,
-                            "192.168.1.1"
+                            /([0-9]{{1,3}}\\.[0-9]{{1,3}}\\.[0-9]{{1,3}}\\.[0-9]{{1,3}})/g,
+                            "{local_ip_set[0]}"
                         );
                         return offer;
-                    });
-                }
-            }
+                    }});
+                }}
+            }}
 
             window.RTCPeerConnection = FakeRTCPeerConnection;
-            navigator.mediaDevices.enumerateDevices = async () => { return []; }; // Блокируем enumerateDevices
-        })();
+            navigator.mediaDevices.enumerateDevices = async () => {{ return []; }}; // Блокируем enumerateDevices
+        }})();
         """)
 
         # Подмена WebGL для блокировки идентификации устройства по рендеру
-        await page.add_init_script("""
-        (() => {
+        webgl = config['webgl']
+        await page.add_init_script(f"""
+        (() => {{
             const getParameter = WebGLRenderingContext.prototype.getParameter;
-            WebGLRenderingContext.prototype.getParameter = function(parameter) {
-                if (parameter === 37445) return "Intel HD Graphics";  // UNMASKED_VENDOR_WEBGL
-                if (parameter === 37446) return "Intel Inc.";         // UNMASKED_RENDERER_WEBGL
+            WebGLRenderingContext.prototype.getParameter = function(parameter) {{
+                if (parameter === 37445) return "{webgl['vendor']}";  // UNMASKED_VENDOR_WEBGL
+                if (parameter === 37446) return "{webgl['renderer']}"; // UNMASKED_RENDERER_WEBGL
                 return getParameter.call(this, parameter);
-            };
-        })();
+            }};
+        }})();
         """)
 
         # Подмена Canvas для предотвращения фингерпринтинга
-        await page.add_init_script("""
-        (() => {
+        canvas = config['canvas']
+        await page.add_init_script(f"""
+        (() => {{
+            // Подмена toDataURL
             const toDataURL = HTMLCanvasElement.prototype.toDataURL;
-            HTMLCanvasElement.prototype.toDataURL = function(type) {
-                console.log("Canvas fingerprinting blocked!");
-                return toDataURL.call(this, "image/png"); // Подмена типа изображения
-            };
-
+            HTMLCanvasElement.prototype.toDataURL = function(type) {{
+                return toDataURL.call(this, "{canvas['image_type']}"); // Подмена типа изображения
+            }};
+        
+            // Подмена getImageData
             const getImageData = CanvasRenderingContext2D.prototype.getImageData;
-            CanvasRenderingContext2D.prototype.getImageData = function(x, y, width, height) {
+            CanvasRenderingContext2D.prototype.getImageData = function(x, y, width, height) {{
                 let imageData = getImageData.call(this, x, y, width, height);
-                for (let i = 0; i < imageData.data.length; i += 4) {
-                    imageData.data[i] ^= 10;   // Изменение красного канала
-                    imageData.data[i+1] ^= 20; // Изменение зелёного канала
-                    imageData.data[i+2] ^= 30; // Изменение синего канала
-                }
+                for (let i = 0; i < imageData.data.length; i += 4) {{
+                    imageData.data[i] ^= {canvas['red']};   // Изменение красного канала
+                    imageData.data[i+1] ^= {canvas['green']}; // Изменение зелёного канала
+                    imageData.data[i+2] ^= {canvas['blue']}; // Изменение синего канала
+                }}
                 return imageData;
-            };
-        })();
+            }};
+        }})();
         """)
         #
         # Изменения для предотвращения фингерпринтинга по аудио
-        await page.add_init_script("""
-        (() => {
+        audio = config['audio']
+        await page.add_init_script(f"""
+        (() => {{
             const originalGetChannelData = AudioBuffer.prototype.getChannelData;
-            AudioBuffer.prototype.getChannelData = function() {
+            AudioBuffer.prototype.getChannelData = function() {{
                 const results = originalGetChannelData.apply(this, arguments);
-                for (let i = 0; i < results.length; i++) {
-                    results[i] = results[i] + (Math.random() * 0.0001); // Незаметное изменение аудиосигнала
-                }
+                for (let i = 0; i < results.length; i++) {{
+                    results[i] = results[i] + (Math.random() * {audio['noiseIntensity']}); // Добавление шума
+                }}
                 return results;
-            };
-        })();
+            }};
+        }})();
         """)
         #
         # # Подмена данных батареи для обхода фингерпринтинга
-        await page.add_init_script("""
-        (() => {
-            navigator.getBattery = function() {
-                return new Promise((resolve) => {
-                    resolve({
-                        charging: true,
-                        chargingTime: 0,
-                        dischargingTime: 9999,
-                        level: 1
-                    });
-                });
-            };
-        })();
+        battery = config['battery']
+        await page.add_init_script(f"""
+        (() => {{
+            navigator.getBattery = function() {{
+                return new Promise((resolve) => {{
+                    resolve({{
+                        charging: {str(battery['charging']).lower()},
+                        chargingTime: {battery['chargingTime']},
+                        dischargingTime: {battery['dischargingTime']},
+                        level: {battery['level']}
+                    }});
+                }});
+            }};
+        }})();
         """)
         #
         # Блокировка USB и HID устройства
-        await page.add_init_script("""
-        (() => {
-            navigator.usb = undefined;
-            navigator.hid = undefined;
-        })();
+        usb = config['usb']
+        await page.add_init_script( f"""
+        (() => {{
+            {f"navigator.usb = undefined;" if usb['disableUSB'] else ""}
+            {f"navigator.hid = undefined;" if usb['disableHID'] else ""}
+        }})();
         """)
 
         # Блокировка информации о плагинах
-        await page.add_init_script("""
-        (() => {
-            Object.defineProperty(navigator, 'plugins', { get: () => [] });
-            Object.defineProperty(navigator, 'mimeTypes', { get: () => [] });
-        })();
+        plugins = config['plugins']
+        await page.add_init_script(f"""
+            (() => {{
+                Object.defineProperty(navigator, 'plugins', {{
+                    get: () => {plugins['plugins']}
+                }});
+                Object.defineProperty(navigator, 'mimeTypes', {{
+                    get: () => {plugins['mimeTypes']}
+                }});
+            }})();
         """)
 
-        # Маскировка платформы (например, под Windows)
-        await page.add_init_script("""
-        (() => {
-            Object.defineProperty(navigator, 'platform', { get: () => 'Win32' });
-        })();
+        # Маскировка платформы
+        await page.add_init_script(f"""
+            (() => {{
+                Object.defineProperty(navigator, 'platform', {{ get: () => '{system}' }});
+            }})();
         """)
 
         # Маскировка языка браузера
-        await page.add_init_script("""
-        (() => {
-            Object.defineProperty(navigator, 'language', { get: () => 'en-US' });
-            Object.defineProperty(navigator, 'languages', { get: () => ['en-US', 'en'] });
-        })();
-        """)
+        primary_language = language.split(",")[0]
+        languages_list = [lang.split(";")[0] for lang in language.split(",")]
+        await page.add_init_script(f"""
+    (() => {{
+        Object.defineProperty(navigator, 'language', {{ get: () => '{primary_language}' }});
+        Object.defineProperty(navigator, 'languages', {{ get: () => {languages_list} }});
+    }})();
+    """)
 
         # Переопределение методов Canvas для защиты от Canvas Fingerprinting
-        await page.add_init_script("""
-        (() => {
+        canvas_2 = config['canvas_2']
+        await page.add_init_script(f"""
+        (() => {{
             const getContext = HTMLCanvasElement.prototype.getContext;
-            HTMLCanvasElement.prototype.getContext = function(type, ...args) {
-                if (type === "2d") {
+            HTMLCanvasElement.prototype.getContext = function(type, ...args) {{
+                if (type === "2d") {{
                     const context = getContext.apply(this, [type, ...args]);
-
+        
                     const originalGetImageData = context.getImageData;
-                    context.getImageData = function(x, y, width, height) {
+                    context.getImageData = function(x, y, width, height) {{
                         let imageData = originalGetImageData.call(this, x, y, width, height);
                         // Подмена цветов (красный, зеленый, синий)
-                        for (let i = 0; i < imageData.data.length; i += 4) {
-                            imageData.data[i] ^= 10;   // Красный канал
-                            imageData.data[i + 1] ^= 20; // Зеленый канал
-                            imageData.data[i + 2] ^= 30; // Синий канал
-                        }
+                        for (let i = 0; i < imageData.data.length; i += 4) {{
+                            imageData.data[i] ^= {canvas_2['red']};   // Красный канал
+                            imageData.data[i + 1] ^= {canvas_2['green']}; // Зеленый канал
+                            imageData.data[i + 2] ^= {canvas_2['blue']}; // Синий канал
+                        }}
                         return imageData;
-                    };
-
+                    }};
+        
                     const originalToDataURL = context.canvas.toDataURL;
-                    context.canvas.toDataURL = function(type) {
+                    context.canvas.toDataURL = function(type) {{
                         console.log("Canvas fingerprinting attempt detected!");
                         // Применяем низкое качество изображения, чтобы скрыть детали
-                        return originalToDataURL.call(this, "image/jpeg", 0.1); // Уменьшаем качество JPEG
-                    };
-
+                        return originalToDataURL.call(this, "image/jpeg", {canvas_2['image_quality']}); // Уменьшаем качество JPEG
+                    }};
+        
                     // Подмена шрифта для текста на Canvas (если используется)
                     const originalFillText = context.fillText;
-                    context.fillText = function(text, x, y) {
-                        context.font = "16px 'Arial', sans-serif"; // Применяем фиктивный шрифт
+                    context.fillText = function(text, x, y) {{
+                        context.font = "{canvas_2['font']}"; // Применяем фиктивный шрифт
                         return originalFillText.call(this, text, x, y);
-                    };
-
+                    }};
+        
                     return context;
-                }
+                }}
                 return getContext.apply(this, arguments);
-            };
-
+            }};
+        
             // Подмена для OffscreenCanvas, если поддерживается
-            if (typeof OffscreenCanvas !== "undefined") {
+            if (typeof OffscreenCanvas !== "undefined") {{
                 const getContextOffscreen = OffscreenCanvas.prototype.getContext;
-                OffscreenCanvas.prototype.getContext = function(type, ...args) {
-                    if (type === "2d") {
+                OffscreenCanvas.prototype.getContext = function(type, ...args) {{
+                    if (type === "2d") {{
                         return null; // Блокируем попытки Canvas Fingerprinting
-                    }
+                    }}
                     return getContextOffscreen.apply(this, arguments);
-                };
-            }
-        })();
+                }};
+            }}
+        }})();
         """)
 
-        await page.add_init_script("""
-        (() => {
-            // Создаём фиктивные шрифты для подмены
-            const fakeFonts = [
-                'FakeFont1',
-                'FakeFont2',
-                'FakeFont3',
-            ];
 
+        fonts = config['fonts']
+        await page.add_init_script( f"""
+        (() => {{
+            // Создаём фиктивные шрифты для подмены
+            const fakeFonts = {fonts};
+        
             // Переопределяем метод `getComputedStyle` для подмены шрифтов
             const originalGetComputedStyle = window.getComputedStyle;
-            window.getComputedStyle = function(element, pseudoElement) {
+            window.getComputedStyle = function(element, pseudoElement) {{
                 const computedStyle = originalGetComputedStyle.apply(this, [element, pseudoElement]);
-
+        
                 // Проверяем стиль font-family
-                if (computedStyle.fontFamily) {
+                if (computedStyle.fontFamily) {{
                     // Заменяем на фиктивный шрифт
                     computedStyle.fontFamily = fakeFonts.join(', ');
-                }
-
+                }}
+        
                 return computedStyle;
-            };
-
+            }};
+        
             // Переопределяем `document.fonts` для предотвращения реальной проверки шрифтов
             const originalAdd = Document.prototype.fonts.add;
-            Document.prototype.fonts.add = function(font) {
+            Document.prototype.fonts.add = function(font) {{
                 // Можно также блокировать или подменить добавление новых шрифтов
-                console.log(`Font added: ${font.family}`);
+                console.log(`Font added: ${{font.family}}`);
                 // Не добавляем реальный шрифт, только фиктивный
                 originalAdd.call(this, font);
-            };
-
+            }};
+        
             // Блокируем или подменяем запросы на установку шрифтов
             const originalMatch = FontFace.prototype.load;
-            FontFace.prototype.load = function() {
+            FontFace.prototype.load = function() {{
                 // Подменяем шрифты, которые загружаются
                 const fakeFont = new FontFace('FakeFont', 'url(fake-font-url)');
                 return fakeFont.load();
-            };
-
+            }};
+        
             console.log("Font fingerprinting blocked!");
-        })();
+        }})();
         """)
 
         # Переход на сайт для тестирования IP
-        # await page.goto("https://browserleaks.com/")
-        await page.goto("https://google.com/")
+        await page.goto("https://browserleaks.com/", wait_until="networkidle")
 
         while True:
             close = input('\r\rEXIT to close browser: ')
@@ -372,4 +399,6 @@ async def start_browser(country):
                 continue
 
 
-asyncio.run(start_browser('gb'))
+
+
+asyncio.run(start_browser('il'))
