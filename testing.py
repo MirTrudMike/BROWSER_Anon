@@ -390,7 +390,7 @@ async def start_browser(country):
     """)
 
     # Переход на сайт для тестирования IP
-    await page.goto("https://browserleaks.com/", wait_until="networkidle")
+    await page.goto("https://google.com/")
 
     # while True:
     #     close = input('\r\rEXIT to close browser: ')
