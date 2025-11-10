@@ -3,3 +3,4 @@ proxies.json
 .idea
 __pycache__/
 used_ips.json
+logs
