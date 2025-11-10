@@ -1,0 +1,172 @@
+2025-03-01 04:44:36 [DEBUG] Loading country configuration...
+2025-03-01 04:44:36 [DEBUG] Reading country configuration file...
+2025-03-01 04:44:36 [INFO] Country configuration loaded successfully
+2025-03-01 04:44:36 [INFO] Loaded 9 countries
+2025-03-01 04:44:36 [INFO] Starting Browser Launcher application
+2025-03-01 04:44:36 [INFO] Initializing Browser Launcher application
+2025-03-01 04:44:36 [DEBUG] Setting up UI components
+2025-03-01 04:44:36 [DEBUG] UI setup completed
+2025-03-01 04:44:36 [DEBUG] Applying dark theme
+2025-03-01 04:44:36 [DEBUG] Dark theme applied successfully
+2025-03-01 04:44:36 [INFO] Browser Launcher initialized successfully
+2025-03-01 04:44:36 [DEBUG] Starting asyncio event loop
+2025-03-01 04:44:36 [INFO] Asyncio event loop started in background thread
+2025-03-01 04:44:37 [INFO] Application window shown
+2025-03-01 04:44:45 [INFO] Country selected: 🇩🇪 Germany
+2025-03-01 04:44:48 [INFO] Country selected: 🇷🇺 Russia
+2025-03-01 04:44:50 [INFO] Launching browser for country: ru
+2025-03-01 04:44:50 [DEBUG] Starting new browser session
+2025-03-01 04:44:50 [INFO] Starting browser launch process for country: ru
+2025-03-01 04:44:50 [INFO] Starting browser for country: ru
+2025-03-01 04:44:50 [INFO] Getting configuration for country: ru
+2025-03-01 04:44:50 [INFO] Finding proxy for country: ru
+2025-03-01 04:44:50 [DEBUG] Reading proxy credentials...
+2025-03-01 04:44:50 [INFO] Proxy credentials loaded successfully
+2025-03-01 04:44:50 [DEBUG] Reading used IPs file...
+2025-03-01 04:44:50 [DEBUG] Loaded 84 used IPs
+2025-03-01 04:44:50 [DEBUG] Trying proxy port: 10000
+2025-03-01 04:44:50 [INFO] Getting proxy info for server: pool.proxy.market:10000
+2025-03-01 04:44:50 [DEBUG] Making request to ip-api.com...
+2025-03-01 04:44:51 [INFO] Successfully got proxy info for IP: 94.233.241.15
+2025-03-01 04:44:51 [DEBUG] IP 94.233.241.15 already used, trying next port
+2025-03-01 04:44:52 [DEBUG] Trying proxy port: 10001
+2025-03-01 04:44:52 [INFO] Getting proxy info for server: pool.proxy.market:10001
+2025-03-01 04:44:52 [DEBUG] Making request to ip-api.com...
+2025-03-01 04:44:52 [INFO] Successfully got proxy info for IP: 95.26.139.207
+2025-03-01 04:44:52 [DEBUG] IP 95.26.139.207 already used, trying next port
+2025-03-01 04:44:53 [DEBUG] Trying proxy port: 10003
+2025-03-01 04:44:53 [INFO] Getting proxy info for server: pool.proxy.market:10003
+2025-03-01 04:44:53 [DEBUG] Making request to ip-api.com...
+2025-03-01 04:44:54 [INFO] Successfully got proxy info for IP: 95.53.181.128
+2025-03-01 04:44:54 [DEBUG] IP 95.53.181.128 already used, trying next port
+2025-03-01 04:44:55 [DEBUG] Trying proxy port: 10006
+2025-03-01 04:44:55 [INFO] Getting proxy info for server: pool.proxy.market:10006
+2025-03-01 04:44:55 [DEBUG] Making request to ip-api.com...
+2025-03-01 04:44:56 [INFO] Successfully got proxy info for IP: 188.186.40.99
+2025-03-01 04:44:56 [DEBUG] Writing new used IP: 188.186.40.99
+2025-03-01 04:44:56 [DEBUG] IP written successfully
+2025-03-01 04:44:56 [INFO] Found suitable proxy with IP: 188.186.40.99
+2025-03-01 04:44:56 [DEBUG] Reading country configuration file...
+2025-03-01 04:44:56 [INFO] Country configuration loaded successfully
+2025-03-01 04:44:56 [DEBUG] Selected system: MacIntel
+2025-03-01 04:44:56 [DEBUG] Selected user agent kit: {'user_agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36', 'screen_size': [1280, 800], 'language': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'}
+2025-03-01 04:44:56 [INFO] Country configuration created successfully
+2025-03-01 04:44:56 [DEBUG] Country configuration: {'proxy_info': {'ip': '188.186.40.99', 'country': 'Russia', 'countryCode': 'RU', 'city': 'Tyumen', 'timezone': 'Asia/Yekaterinburg', 'location': {'latitude': 57.1533, 'longitude': 65.5418}, 'credentials': {'server': 'http://pool.proxy.market:10006', 'username': 'QXyEpQqfIkiv', 'password': 'RNW78Fm5'}}, 'system': 'MacIntel', 'user_agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36', 'screen_size': [1280, 800], 'language': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'}
+2025-03-01 04:44:56 [DEBUG] Detected browser type: Chrome
+2025-03-01 04:44:56 [INFO] Creating configuration for system: MacIntel, browser: Chrome
+2025-03-01 04:44:56 [DEBUG] Generated session hash: 72b8b83e5fea519ff12d5a39cb6e1d44
+2025-03-01 04:44:56 [DEBUG] Selecting base browser parameters...
+2025-03-01 04:44:56 [DEBUG] Generated consistent random for salt 'webgl': 0.7757708923609279
+2025-03-01 04:44:56 [DEBUG] Selected item with salt 'webgl': {'vendor': 'AMD', 'renderer': 'AMD Radeon Pro 5500M'}
+2025-03-01 04:44:56 [DEBUG] Generated consistent random for salt 'canvas': 0.2852468851355818
+2025-03-01 04:44:56 [DEBUG] Selected item with salt 'canvas': {'red': 2, 'green': 4, 'blue': 6, 'image_type': 'image/jpeg', 'quality': 0.88}
+2025-03-01 04:44:56 [DEBUG] Generated consistent random for salt 'audio': 0.4043585303156071
+2025-03-01 04:44:56 [DEBUG] Selected item with salt 'audio': {'noiseIntensity': 0.00016, 'sampleRate': 96000, 'channelCount': 2}
+2025-03-01 04:44:56 [DEBUG] Generated consistent random for salt 'ip': 0.08337773469519694
+2025-03-01 04:44:56 [DEBUG] Selected item with salt 'ip': ['192.168.1.100', 'fe80::1234:5678:9abc:def0', '10.0.0.15']
+2025-03-01 04:44:56 [DEBUG] Generated consistent random for salt 'hardware': 0.37832209763088337
+2025-03-01 04:44:56 [DEBUG] Selected item with salt 'hardware': {'hardwareConcurrency': 10, 'deviceMemory': 16, 'platform': 'MacIntel', 'oscpu': 'Intel Mac OS X 11.0'}
+2025-03-01 04:44:56 [DEBUG] Generated consistent random for salt 'battery': 0.5264406626377087
+2025-03-01 04:44:56 [DEBUG] Selected item with salt 'battery': {'charging': False, 'chargingTime': None, 'dischargingTime': 3600, 'level': 0.51}
+2025-03-01 04:44:56 [DEBUG] Generated consistent random for salt 'plugins': 0.8612019662346159
+2025-03-01 04:44:56 [DEBUG] Selected item with salt 'plugins': {'plugins': [{'name': 'Chrome PDF Plugin', 'filename': 'internal-pdf-viewer', 'description': 'Portable Document Format'}, {'name': 'Chrome PDF Viewer', 'filename': 'internal-pdf-viewer', 'description': 'Portable Document Format'}, {'name': 'Native Client', 'filename': 'internal-nacl-plugin', 'description': 'Native Client'}, {'name': 'Widevine Content Decryption Module', 'filename': 'widevinecdm', 'description': 'Enables Widevine licenses for playback of HTML audio/video content.'}], 'mimeTypes': [{'type': 'application/pdf', 'suffixes': 'pdf', 'description': 'Portable Document Format'}, {'type': 'application/x-google-chrome-pdf', 'suffixes': 'pdf', 'description': 'Portable Document Format'}, {'type': 'application/x-nacl', 'suffixes': '', 'description': 'Native Client'}, {'type': 'application/x-ppapi-widevine-cdm', 'suffixes': '', 'description': 'Widevine Content Decryption Module'}]}
+2025-03-01 04:44:56 [DEBUG] Generated consistent random for salt 'canvas2d': 0.264065189429168
+2025-03-01 04:44:56 [DEBUG] Selected item with salt 'canvas2d': {'font': '14px San Francisco', 'textBaseline': 'top', 'fillStyle': '#242424', 'quality': 0.95}
+2025-03-01 04:44:56 [DEBUG] Generated consistent random for salt 'fonts': 0.08389841814436007
+2025-03-01 04:44:56 [DEBUG] Selected item with salt 'fonts': ['-apple-system', 'SF Pro Text', 'Helvetica Neue', 'Helvetica', 'Arial']
+2025-03-01 04:44:56 [DEBUG] Selecting screen parameters...
+2025-03-01 04:44:56 [DEBUG] Generated consistent random for salt 'screen': 0.8340250142867324
+2025-03-01 04:44:56 [DEBUG] Selected item with salt 'screen': {'width': 3024, 'height': 1964, 'colorDepth': 24, 'pixelDepth': 24, 'dpi': 254}
+2025-03-01 04:44:56 [DEBUG] Configuring user behavior parameters...
+2025-03-01 04:44:56 [DEBUG] Generated consistent random for salt 'mouse_speed': 0.6306642061084174
+2025-03-01 04:44:56 [DEBUG] Selected item with salt 'mouse_speed': 1.2
+2025-03-01 04:44:56 [DEBUG] Generated consistent random for salt 'click_delay': 0.5188753552491004
+2025-03-01 04:44:56 [DEBUG] Selected item with salt 'click_delay': 150
+2025-03-01 04:44:56 [DEBUG] Generated consistent random for salt 'dbl_click': 0.5334323702698882
+2025-03-01 04:44:56 [DEBUG] Selected item with salt 'dbl_click': 300
+2025-03-01 04:44:56 [DEBUG] Generated consistent random for salt 'typing_speed': 0.4482280040680687
+2025-03-01 04:44:56 [DEBUG] Selected item with salt 'typing_speed': 150
+2025-03-01 04:44:56 [DEBUG] Generated consistent random for salt 'typing_var': 0.4389972247351336
+2025-03-01 04:44:56 [DEBUG] Selected item with salt 'typing_var': 20
+2025-03-01 04:44:56 [DEBUG] Generated consistent random for salt 'key_press': 0.022346345437506035
+2025-03-01 04:44:56 [DEBUG] Selected item with salt 'key_press': 50
+2025-03-01 04:44:56 [DEBUG] Generated consistent random for salt 'scroll_speed': 0.5290930244567051
+2025-03-01 04:44:56 [DEBUG] Selected item with salt 'scroll_speed': 200
+2025-03-01 04:44:56 [DEBUG] Generated consistent random for salt 'scroll_smooth': 0.00900323336290875
+2025-03-01 04:44:56 [DEBUG] Selected item with salt 'scroll_smooth': 0.8
+2025-03-01 04:44:56 [DEBUG] Generated consistent random for salt 'scroll_pause': 0.21645897615280613
+2025-03-01 04:44:56 [DEBUG] Selected item with salt 'scroll_pause': 500
+2025-03-01 04:44:56 [DEBUG] Configuring browser history parameters...
+2025-03-01 04:44:56 [DEBUG] Generated consistent random for salt 'visit_freq': 0.7623340977992648
+2025-03-01 04:44:56 [DEBUG] Selected item with salt 'visit_freq': {'daily': 40, 'weekly': 180, 'monthly': 700}
+2025-03-01 04:44:56 [DEBUG] Generated consistent random for salt 'time_spent': 0.009947609880243536
+2025-03-01 04:44:56 [DEBUG] Selected item with salt 'time_spent': {'min': 30, 'avg': 120, 'max': 300}
+2025-03-01 04:44:56 [DEBUG] Generated consistent random for salt 'bookmarks': 0.7095223904178919
+2025-03-01 04:44:56 [DEBUG] Selected item with salt 'bookmarks': 50
+2025-03-01 04:44:56 [DEBUG] Generated consistent random for salt 'history_depth': 0.5282976758391945
+2025-03-01 04:44:56 [DEBUG] Selected item with salt 'history_depth': 30
+2025-03-01 04:44:56 [DEBUG] Configuring network parameters...
+2025-03-01 04:44:56 [DEBUG] Generated consistent random for salt 'bandwidth': 0.8407812201002581
+2025-03-01 04:44:56 [DEBUG] Selected item with salt 'bandwidth': {'download': 200000000, 'upload': 100000000}
+2025-03-01 04:44:56 [DEBUG] Generated consistent random for salt 'latency': 0.929642668584804
+2025-03-01 04:44:56 [DEBUG] Selected item with salt 'latency': {'min': 40, 'avg': 70, 'max': 100}
+2025-03-01 04:44:56 [DEBUG] Generated consistent random for salt 'packet_loss': 0.0656414995374266
+2025-03-01 04:44:56 [DEBUG] Selected item with salt 'packet_loss': 0.0
+2025-03-01 04:44:56 [DEBUG] Generated consistent random for salt 'connection': 0.13936729919239202
+2025-03-01 04:44:56 [DEBUG] Selected item with salt 'connection': wifi
+2025-03-01 04:44:56 [DEBUG] Applying parameter variations...
+2025-03-01 04:44:56 [DEBUG] Generated consistent random for salt 'noise': 0.16863524218494821
+2025-03-01 04:44:56 [DEBUG] Generated consistent random for salt 'quality': 0.20734289115786905
+2025-03-01 04:44:56 [DEBUG] Generated consistent random for salt 'mouse_var': 0.30558235371990633
+2025-03-01 04:44:56 [DEBUG] Generated consistent random for salt 'typing_var': 0.4389972247351336
+2025-03-01 04:44:56 [DEBUG] Generated consistent random for salt 'scroll_var': 0.7231214334072319
+2025-03-01 04:44:56 [DEBUG] Generated consistent random for salt 'usb': 0.9427981166067264
+2025-03-01 04:44:56 [DEBUG] Generated consistent random for salt 'hid': 0.09044809848792255
+2025-03-01 04:44:56 [INFO] Configuration created successfully
+2025-03-01 04:44:56 [DEBUG] Final configuration: {'hardware': {'hardwareConcurrency': 10, 'deviceMemory': 16, 'platform': 'MacIntel', 'oscpu': 'Intel Mac OS X 11.0'}, 'local_ip_set': ['192.168.1.100', 'fe80::1234:5678:9abc:def0', '10.0.0.15'], 'webgl': {'vendor': 'AMD', 'renderer': 'AMD Radeon Pro 5500M'}, 'canvas': {'red': 2, 'green': 4, 'blue': 6, 'image_type': 'image/jpeg', 'quality': 0.869698469768757}, 'audio': {'noiseIntensity': 0.00015469816387495916, 'sampleRate': 96000, 'channelCount': 2}, 'battery': {'charging': False, 'chargingTime': None, 'dischargingTime': 3600, 'level': 0.51}, 'usb': {'disableUSB': True, 'disableHID': False}, 'plugins': {'plugins': [{'name': 'Chrome PDF Plugin', 'filename': 'internal-pdf-viewer', 'description': 'Portable Document Format'}, {'name': 'Chrome PDF Viewer', 'filename': 'internal-pdf-viewer', 'description': 'Portable Document Format'}, {'name': 'Native Client', 'filename': 'internal-nacl-plugin', 'description': 'Native Client'}, {'name': 'Widevine Content Decryption Module', 'filename': 'widevinecdm', 'description': 'Enables Widevine licenses for playback of HTML audio/video content.'}], 'mimeTypes': [{'type': 'application/pdf', 'suffixes': 'pdf', 'description': 'Portable Document Format'}, {'type': 'application/x-google-chrome-pdf', 'suffixes': 'pdf', 'description': 'Portable Document Format'}, {'type': 'application/x-nacl', 'suffixes': '', 'description': 'Native Client'}, {'type': 'application/x-ppapi-widevine-cdm', 'suffixes': '', 'description': 'Widevine Content Decryption Module'}]}, 'canvas_2d': {'red': 1, 'green': 2, 'blue': 3, 'quality': 0.95, 'font': '14px San Francisco'}, 'fonts': ['-apple-system', 'SF Pro Text', 'Helvetica Neue', 'Helvetica', 'Arial'], 'screen': {'width': 3024, 'height': 1964, 'colorDepth': 24, 'pixelDepth': 24, 'dpi': 254}, 'user_behavior': {'mouse': {'moveSpeed': 1.1766698824463886, 'clickDelay': 150, 'doubleClickDelay': 300}, 'keyboard': {'typingSpeed': 149.084958371027, 'typingVariance': 20, 'keyPressTime': 50}, 'scroll': {'speed': 204.46242866814464, 'smoothness': 0.8, 'pauseTime': 500}}, 'history': {'visitFrequency': {'daily': 40, 'weekly': 180, 'monthly': 700}, 'timeSpent': {'min': 30, 'avg': 120, 'max': 300}, 'bookmarkCount': 50, 'historyDepth': 30}, 'network': {'bandwidth': {'download': 200000000, 'upload': 100000000}, 'latency': {'min': 40, 'avg': 70, 'max': 100}, 'packetLoss': 0.0, 'connectionType': 'wifi'}}
+2025-03-01 04:44:56 [DEBUG] Browser configuration created
+2025-03-01 04:44:56 [DEBUG] Initializing Playwright...
+2025-03-01 04:44:57 [DEBUG] Launching browser...
+2025-03-01 04:44:58 [DEBUG] Creating browser context...
+2025-03-01 04:44:58 [DEBUG] Creating new page...
+2025-03-01 04:44:59 [DEBUG] Adding masking scripts...
+2025-03-01 04:44:59 [DEBUG] Adding hardware configuration scripts...
+2025-03-01 04:44:59 [DEBUG] Adding WebRTC configuration...
+2025-03-01 04:44:59 [DEBUG] Adding WebGL configuration...
+2025-03-01 04:44:59 [DEBUG] Adding Canvas configuration...
+2025-03-01 04:44:59 [DEBUG] Adding Audio configuration...
+2025-03-01 04:44:59 [DEBUG] Adding Battery configuration...
+2025-03-01 04:44:59 [DEBUG] Adding USB configuration...
+2025-03-01 04:44:59 [DEBUG] Adding Plugins configuration...
+2025-03-01 04:44:59 [DEBUG] Adding Platform configuration...
+2025-03-01 04:44:59 [DEBUG] Adding Language configuration...
+2025-03-01 04:44:59 [DEBUG] Adding Canvas 2D configuration...
+2025-03-01 04:44:59 [DEBUG] Adding Fonts configuration...
+2025-03-01 04:44:59 [INFO] Navigating to test site...
+2025-03-01 04:45:29 [ERROR] Error starting browser Error: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://google.com/", waiting until "load"
+
+Traceback:
+  File "/home/mirtrudmike/Projects/BROWSER/testing.py", line 669, in start_browser
+    await page.goto("https://google.com/")
+  File "/home/mirtrudmike/Projects/BROWSER/.venv/lib/python3.13/site-packages/playwright/async_api/_generated.py", line 8985, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "/home/mirtrudmike/Projects/BROWSER/.venv/lib/python3.13/site-packages/playwright/_impl/_page.py", line 551, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mirtrudmike/Projects/BROWSER/.venv/lib/python3.13/site-packages/playwright/_impl/_frame.py", line 145, in goto
+    await self._channel.send("goto", locals_to_params(locals()))
+  File "/home/mirtrudmike/Projects/BROWSER/.venv/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 61, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "/home/mirtrudmike/Projects/BROWSER/.venv/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 528, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+
+2025-03-01 04:45:29 [ERROR] Browser or configuration is None
+2025-03-01 04:47:03 [INFO] Exiting application

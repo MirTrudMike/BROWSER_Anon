@@ -1,0 +1,66 @@
+2025-03-12 23:11:19 [INFO] Country configuration loaded successfully
+2025-03-12 23:11:19 [INFO] Loaded 10 countries
+2025-03-12 23:11:19 [INFO] Starting Browser Launcher application
+2025-03-12 23:11:20 [INFO] Initializing Browser Launcher application
+2025-03-12 23:11:20 [INFO] Browser Launcher initialized successfully
+2025-03-12 23:11:20 [INFO] Asyncio event loop started in background thread
+2025-03-12 23:11:20 [INFO] Application window shown
+2025-03-12 23:11:28 [INFO] Country selected: 🇬🇧 Great Britain
+2025-03-12 23:11:46 [INFO] Launching browser for country: gb
+2025-03-12 23:11:46 [INFO] Starting browser launch process for country: gb
+2025-03-12 23:11:46 [INFO] Starting browser for country: gb
+2025-03-12 23:11:46 [INFO] Getting configuration for country: gb
+2025-03-12 23:11:46 [INFO] Finding proxy for country: gb
+2025-03-12 23:11:46 [INFO] Proxy credentials loaded successfully
+2025-03-12 23:11:46 [INFO] Getting proxy info for server: pool.proxy.market:10000
+2025-03-12 23:11:53 [INFO] Successfully got proxy info for IP: 81.129.233.131
+2025-03-12 23:11:53 [INFO] Found suitable proxy with IP: 81.129.233.131
+2025-03-12 23:11:53 [INFO] Country configuration loaded successfully
+2025-03-12 23:11:53 [INFO] Country configuration created successfully
+2025-03-12 23:11:53 [INFO] Creating configuration for system: MacIntel, browser: Chrome
+2025-03-12 23:11:53 [INFO] Configuration created successfully
+2025-03-12 23:11:58 [INFO] Browser started successfully
+2025-03-12 23:11:58 [INFO] Updating configuration display
+2025-03-12 23:11:58 [INFO] Updating configuration display
+2025-03-12 23:11:58 [INFO] Configuration display updated
+2025-03-12 23:15:28 [INFO] Country selected: 🇦🇪 UAE
+2025-03-12 23:15:31 [INFO] Refreshing browser for country: ae
+2025-03-12 23:15:31 [INFO] Closing browser
+2025-03-12 23:15:31 [INFO] Starting browser launch process for country: ae
+2025-03-12 23:15:31 [INFO] Starting browser for country: ae
+2025-03-12 23:15:31 [INFO] Getting configuration for country: ae
+2025-03-12 23:15:31 [INFO] Finding proxy for country: ae
+2025-03-12 23:15:31 [INFO] Proxy credentials loaded successfully
+2025-03-12 23:15:31 [INFO] Getting proxy info for server: pool.proxy.market:10000
+2025-03-12 23:15:32 [INFO] Successfully got proxy info for IP: 217.165.23.79
+2025-03-12 23:15:32 [INFO] Found suitable proxy with IP: 217.165.23.79
+2025-03-12 23:15:32 [INFO] Country configuration loaded successfully
+2025-03-12 23:15:32 [INFO] Country configuration created successfully
+2025-03-12 23:15:32 [INFO] Creating configuration for system: Linux x86_64, browser: Firefox
+2025-03-12 23:15:32 [INFO] Configuration created successfully
+2025-03-12 23:15:32 [INFO] Browser closed successfully
+2025-03-12 23:15:33 [INFO] Browser started successfully
+2025-03-12 23:15:33 [INFO] Updating configuration display
+2025-03-12 23:15:33 [INFO] Updating configuration display
+2025-03-12 23:15:33 [INFO] Configuration display updated
+2025-03-13 01:38:30 [INFO] Refreshing browser for country: ae
+2025-03-13 01:38:30 [INFO] Closing browser
+2025-03-13 01:38:30 [INFO] Starting browser launch process for country: ae
+2025-03-13 01:38:30 [INFO] Starting browser for country: ae
+2025-03-13 01:38:30 [INFO] Getting configuration for country: ae
+2025-03-13 01:38:30 [INFO] Finding proxy for country: ae
+2025-03-13 01:38:30 [INFO] Proxy credentials loaded successfully
+2025-03-13 01:38:30 [INFO] Getting proxy info for server: pool.proxy.market:10000
+2025-03-13 01:38:31 [INFO] Successfully got proxy info for IP: 86.96.52.169
+2025-03-13 01:38:31 [INFO] Found suitable proxy with IP: 86.96.52.169
+2025-03-13 01:38:31 [INFO] Country configuration loaded successfully
+2025-03-13 01:38:31 [INFO] Country configuration created successfully
+2025-03-13 01:38:31 [INFO] Creating configuration for system: Linux x86_64, browser: Chrome
+2025-03-13 01:38:31 [INFO] Configuration created successfully
+2025-03-13 01:38:31 [INFO] Browser closed successfully
+2025-03-13 01:38:33 [INFO] Browser started successfully
+2025-03-13 01:38:33 [INFO] Updating configuration display
+2025-03-13 01:38:33 [INFO] Updating configuration display
+2025-03-13 01:38:33 [INFO] Configuration display updated
+2025-03-13 01:50:42 [INFO] Exiting application
+2025-03-13 01:50:42 [INFO] Closing browser

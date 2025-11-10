@@ -1,0 +1,27 @@
+2025-03-01 05:14:20 [INFO] Country configuration loaded successfully
+2025-03-01 05:14:20 [INFO] Loaded 9 countries
+2025-03-01 05:14:20 [INFO] Starting Browser Launcher application
+2025-03-01 05:14:20 [INFO] Initializing Browser Launcher application
+2025-03-01 05:14:20 [INFO] Browser Launcher initialized successfully
+2025-03-01 05:14:20 [INFO] Asyncio event loop started in background thread
+2025-03-01 05:14:20 [INFO] Application window shown
+2025-03-01 05:14:24 [INFO] Country selected: 🇦🇪 UAE
+2025-03-01 05:14:26 [INFO] Launching browser for country: ae
+2025-03-01 05:14:26 [INFO] Starting browser launch process for country: ae
+2025-03-01 05:14:26 [INFO] Starting browser for country: ae
+2025-03-01 05:14:26 [INFO] Getting configuration for country: ae
+2025-03-01 05:14:26 [INFO] Finding proxy for country: ae
+2025-03-01 05:14:26 [INFO] Proxy credentials loaded successfully
+2025-03-01 05:14:26 [INFO] Getting proxy info for server: pool.proxy.market:10000
+2025-03-01 05:14:27 [INFO] Successfully got proxy info for IP: 94.207.194.209
+2025-03-01 05:14:27 [INFO] Found suitable proxy with IP: 94.207.194.209
+2025-03-01 05:14:27 [INFO] Country configuration loaded successfully
+2025-03-01 05:14:27 [INFO] Country configuration created successfully
+2025-03-01 05:14:27 [INFO] Creating configuration for system: MacIntel, browser: Chrome
+2025-03-01 05:14:27 [INFO] Configuration created successfully
+2025-03-01 05:14:29 [INFO] Browser started successfully
+2025-03-01 05:14:29 [INFO] Updating configuration display
+2025-03-01 05:14:29 [INFO] Updating configuration display
+2025-03-01 05:14:29 [INFO] Configuration display updated
+2025-03-01 05:16:19 [INFO] Exiting application
+2025-03-01 05:16:19 [INFO] Closing browser

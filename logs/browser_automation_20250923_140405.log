@@ -1,0 +1,48 @@
+2025-09-23 14:04:05 [INFO] Country configuration loaded successfully
+2025-09-23 14:04:05 [INFO] Loaded 11 countries
+2025-09-23 14:04:05 [INFO] Starting Browser Launcher application
+2025-09-23 14:04:05 [INFO] Initializing Browser Launcher application
+2025-09-23 14:04:05 [INFO] Browser Launcher initialized successfully
+2025-09-23 14:04:05 [INFO] Asyncio event loop started in background thread
+2025-09-23 14:04:05 [INFO] Application window shown
+2025-09-23 14:04:11 [INFO] Country selected: 🇬🇪 Georgia
+2025-09-23 14:04:12 [INFO] Launching browser for country: ge
+2025-09-23 14:04:12 [INFO] Starting browser launch process for country: ge
+2025-09-23 14:04:12 [INFO] Starting browser for country: ge
+2025-09-23 14:04:12 [INFO] Getting configuration for country: ge
+2025-09-23 14:04:12 [INFO] Finding proxy for country: ge
+2025-09-23 14:04:12 [INFO] Proxy credentials loaded successfully
+2025-09-23 14:04:12 [INFO] Getting proxy info for server: pool.proxy.market:10000
+2025-09-23 14:04:13 [INFO] Successfully got proxy info for IP: 82.211.148.163
+2025-09-23 14:04:13 [INFO] Found suitable proxy with IP: 82.211.148.163
+2025-09-23 14:04:13 [INFO] Country configuration loaded successfully
+2025-09-23 14:04:13 [INFO] Country configuration created successfully
+2025-09-23 14:04:13 [INFO] Creating configuration for system: MacIntel, browser: Chrome
+2025-09-23 14:04:13 [INFO] Configuration created successfully
+2025-09-23 14:04:16 [INFO] Browser started successfully
+2025-09-23 14:04:16 [INFO] Updating configuration display
+2025-09-23 14:04:16 [INFO] Updating configuration display
+2025-09-23 14:04:16 [INFO] Configuration display updated
+2025-09-23 14:05:14 [INFO] Refreshing browser for country: ge
+2025-09-23 14:05:14 [INFO] Closing browser
+2025-09-23 14:05:14 [INFO] Starting browser launch process for country: ge
+2025-09-23 14:05:14 [INFO] Starting browser for country: ge
+2025-09-23 14:05:14 [INFO] Getting configuration for country: ge
+2025-09-23 14:05:14 [INFO] Finding proxy for country: ge
+2025-09-23 14:05:14 [INFO] Proxy credentials loaded successfully
+2025-09-23 14:05:14 [INFO] Getting proxy info for server: pool.proxy.market:10000
+2025-09-23 14:05:14 [INFO] Successfully got proxy info for IP: 82.211.148.163
+2025-09-23 14:05:15 [INFO] Getting proxy info for server: pool.proxy.market:10001
+2025-09-23 14:05:16 [INFO] Successfully got proxy info for IP: 212.58.119.29
+2025-09-23 14:05:16 [INFO] Found suitable proxy with IP: 212.58.119.29
+2025-09-23 14:05:16 [INFO] Country configuration loaded successfully
+2025-09-23 14:05:16 [INFO] Country configuration created successfully
+2025-09-23 14:05:16 [INFO] Creating configuration for system: Win64, browser: Firefox
+2025-09-23 14:05:16 [INFO] Configuration created successfully
+2025-09-23 14:05:16 [INFO] Browser closed successfully
+2025-09-23 14:05:17 [INFO] Browser started successfully
+2025-09-23 14:05:17 [INFO] Updating configuration display
+2025-09-23 14:05:17 [INFO] Updating configuration display
+2025-09-23 14:05:17 [INFO] Configuration display updated
+2025-09-23 14:06:06 [INFO] Exiting application
+2025-09-23 14:06:06 [INFO] Closing browser

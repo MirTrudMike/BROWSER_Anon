@@ -1,0 +1,27 @@
+2025-10-21 09:30:48 [INFO] Country configuration loaded successfully
+2025-10-21 09:30:48 [INFO] Loaded 11 countries
+2025-10-21 09:30:48 [INFO] Starting Browser Launcher application
+2025-10-21 09:30:48 [INFO] Initializing Browser Launcher application
+2025-10-21 09:30:48 [INFO] Browser Launcher initialized successfully
+2025-10-21 09:30:49 [INFO] Asyncio event loop started in background thread
+2025-10-21 09:30:49 [INFO] Application window shown
+2025-10-21 09:31:00 [INFO] Country selected: 🇹🇷 Turkey
+2025-10-21 09:31:02 [INFO] Launching browser for country: tr
+2025-10-21 09:31:02 [INFO] Starting browser launch process for country: tr
+2025-10-21 09:31:02 [INFO] Starting browser for country: tr
+2025-10-21 09:31:02 [INFO] Getting configuration for country: tr
+2025-10-21 09:31:02 [INFO] Finding proxy for country: tr
+2025-10-21 09:31:02 [INFO] Proxy credentials loaded successfully
+2025-10-21 09:31:02 [INFO] Getting proxy info for server: pool.proxy.market:10000
+2025-10-21 09:31:02 [INFO] Successfully got proxy info for IP: 46.2.131.184
+2025-10-21 09:31:02 [INFO] Found suitable proxy with IP: 46.2.131.184
+2025-10-21 09:31:02 [INFO] Country configuration loaded successfully
+2025-10-21 09:31:02 [INFO] Country configuration created successfully
+2025-10-21 09:31:02 [INFO] Creating configuration for system: Win64, browser: Edge
+2025-10-21 09:31:02 [INFO] Configuration created successfully
+2025-10-21 09:31:06 [INFO] Browser started successfully
+2025-10-21 09:31:06 [INFO] Updating configuration display
+2025-10-21 09:31:06 [INFO] Updating configuration display
+2025-10-21 09:31:06 [INFO] Configuration display updated
+2025-10-21 09:51:28 [INFO] Exiting application
+2025-10-21 09:51:28 [INFO] Closing browser

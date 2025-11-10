@@ -1,0 +1,51 @@
+2025-06-03 18:47:13 [INFO] Country configuration loaded successfully
+2025-06-03 18:47:13 [INFO] Loaded 11 countries
+2025-06-03 18:47:13 [INFO] Starting Browser Launcher application
+2025-06-03 18:47:13 [INFO] Initializing Browser Launcher application
+2025-06-03 18:47:13 [INFO] Browser Launcher initialized successfully
+2025-06-03 18:47:13 [INFO] Asyncio event loop started in background thread
+2025-06-03 18:47:14 [INFO] Application window shown
+2025-06-03 18:47:22 [INFO] Country selected: 🇩🇪 Germany
+2025-06-03 18:47:24 [INFO] Country selected: 🇷🇺 Russia
+2025-06-03 18:47:25 [INFO] Launching browser for country: ru
+2025-06-03 18:47:25 [INFO] Starting browser launch process for country: ru
+2025-06-03 18:47:25 [INFO] Starting browser for country: ru
+2025-06-03 18:47:25 [INFO] Getting configuration for country: ru
+2025-06-03 18:47:25 [INFO] Finding proxy for country: ru
+2025-06-03 18:47:25 [INFO] Proxy credentials loaded successfully
+2025-06-03 18:47:25 [INFO] Getting proxy info for server: pool.proxy.market:10000
+2025-06-03 18:47:26 [INFO] Successfully got proxy info for IP: 85.172.103.51
+2025-06-03 18:47:26 [INFO] Found suitable proxy with IP: 85.172.103.51
+2025-06-03 18:47:26 [INFO] Country configuration loaded successfully
+2025-06-03 18:47:26 [INFO] Country configuration created successfully
+2025-06-03 18:47:26 [INFO] Creating configuration for system: MacIntel, browser: Firefox
+2025-06-03 18:47:26 [INFO] Configuration created successfully
+2025-06-03 18:47:30 [INFO] Browser started successfully
+2025-06-03 18:47:30 [INFO] Updating configuration display
+2025-06-03 18:47:30 [INFO] Updating configuration display
+2025-06-03 18:47:30 [INFO] Configuration display updated
+2025-06-03 18:48:46 [INFO] Refreshing browser for country: ru
+2025-06-03 18:48:46 [INFO] Closing browser
+2025-06-03 18:48:46 [INFO] Starting browser launch process for country: ru
+2025-06-03 18:48:46 [INFO] Starting browser for country: ru
+2025-06-03 18:48:46 [INFO] Getting configuration for country: ru
+2025-06-03 18:48:46 [INFO] Finding proxy for country: ru
+2025-06-03 18:48:46 [INFO] Proxy credentials loaded successfully
+2025-06-03 18:48:46 [INFO] Getting proxy info for server: pool.proxy.market:10000
+2025-06-03 18:48:47 [INFO] Successfully got proxy info for IP: 85.172.103.51
+2025-06-03 18:48:48 [INFO] Getting proxy info for server: pool.proxy.market:10001
+2025-06-03 18:48:49 [INFO] Successfully got proxy info for IP: 85.172.103.51
+2025-06-03 18:48:50 [INFO] Getting proxy info for server: pool.proxy.market:10003
+2025-06-03 18:48:50 [INFO] Successfully got proxy info for IP: 195.58.45.28
+2025-06-03 18:48:50 [INFO] Found suitable proxy with IP: 195.58.45.28
+2025-06-03 18:48:50 [INFO] Country configuration loaded successfully
+2025-06-03 18:48:50 [INFO] Country configuration created successfully
+2025-06-03 18:48:50 [INFO] Creating configuration for system: Linux x86_64, browser: Firefox
+2025-06-03 18:48:50 [INFO] Configuration created successfully
+2025-06-03 18:48:50 [INFO] Browser closed successfully
+2025-06-03 18:48:52 [INFO] Browser started successfully
+2025-06-03 18:48:52 [INFO] Updating configuration display
+2025-06-03 18:48:52 [INFO] Updating configuration display
+2025-06-03 18:48:52 [INFO] Configuration display updated
+2025-06-03 18:50:59 [INFO] Exiting application
+2025-06-03 18:50:59 [INFO] Closing browser

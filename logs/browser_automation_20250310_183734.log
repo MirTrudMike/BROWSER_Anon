@@ -1,0 +1,68 @@
+2025-03-10 18:37:34 [INFO] Country configuration loaded successfully
+2025-03-10 18:37:34 [INFO] Loaded 10 countries
+2025-03-10 18:37:34 [INFO] Starting Browser Launcher application
+2025-03-10 18:37:34 [INFO] Initializing Browser Launcher application
+2025-03-10 18:37:34 [INFO] Browser Launcher initialized successfully
+2025-03-10 18:37:34 [INFO] Asyncio event loop started in background thread
+2025-03-10 18:37:34 [INFO] Application window shown
+2025-03-10 18:37:42 [INFO] Country selected: 🇫🇷 France
+2025-03-10 18:37:46 [INFO] Launching browser for country: fr
+2025-03-10 18:37:46 [INFO] Starting browser launch process for country: fr
+2025-03-10 18:37:46 [INFO] Starting browser for country: fr
+2025-03-10 18:37:46 [INFO] Getting configuration for country: fr
+2025-03-10 18:37:46 [INFO] Finding proxy for country: fr
+2025-03-10 18:37:46 [INFO] Proxy credentials loaded successfully
+2025-03-10 18:37:46 [INFO] Getting proxy info for server: pool.proxy.market:10000
+2025-03-10 18:37:47 [INFO] Successfully got proxy info for IP: 86.247.67.251
+2025-03-10 18:37:47 [INFO] Found suitable proxy with IP: 86.247.67.251
+2025-03-10 18:37:47 [INFO] Country configuration loaded successfully
+2025-03-10 18:37:47 [INFO] Country configuration created successfully
+2025-03-10 18:37:47 [INFO] Creating configuration for system: MacIntel, browser: Chrome
+2025-03-10 18:37:47 [INFO] Configuration created successfully
+2025-03-10 18:37:50 [INFO] Browser started successfully
+2025-03-10 18:37:50 [INFO] Updating configuration display
+2025-03-10 18:37:50 [INFO] Updating configuration display
+2025-03-10 18:37:50 [INFO] Configuration display updated
+2025-03-10 18:40:54 [INFO] Country selected: 🇩🇪 Germany
+2025-03-10 18:41:11 [INFO] Refreshing browser for country: de
+2025-03-10 18:41:11 [INFO] Closing browser
+2025-03-10 18:41:11 [INFO] Starting browser launch process for country: de
+2025-03-10 18:41:11 [INFO] Starting browser for country: de
+2025-03-10 18:41:11 [INFO] Getting configuration for country: de
+2025-03-10 18:41:11 [INFO] Finding proxy for country: de
+2025-03-10 18:41:11 [INFO] Proxy credentials loaded successfully
+2025-03-10 18:41:11 [INFO] Getting proxy info for server: pool.proxy.market:10000
+2025-03-10 18:41:11 [INFO] Successfully got proxy info for IP: 37.201.241.72
+2025-03-10 18:41:11 [INFO] Found suitable proxy with IP: 37.201.241.72
+2025-03-10 18:41:11 [INFO] Country configuration loaded successfully
+2025-03-10 18:41:11 [INFO] Country configuration created successfully
+2025-03-10 18:41:11 [INFO] Creating configuration for system: Win64, browser: Chrome
+2025-03-10 18:41:11 [INFO] Configuration created successfully
+2025-03-10 18:41:12 [INFO] Browser closed successfully
+2025-03-10 18:41:14 [INFO] Browser started successfully
+2025-03-10 18:41:14 [INFO] Updating configuration display
+2025-03-10 18:41:14 [INFO] Updating configuration display
+2025-03-10 18:41:14 [INFO] Configuration display updated
+2025-03-10 18:42:57 [INFO] Refreshing browser for country: de
+2025-03-10 18:42:57 [INFO] Closing browser
+2025-03-10 18:42:57 [INFO] Starting browser launch process for country: de
+2025-03-10 18:42:57 [INFO] Starting browser for country: de
+2025-03-10 18:42:57 [INFO] Getting configuration for country: de
+2025-03-10 18:42:57 [INFO] Finding proxy for country: de
+2025-03-10 18:42:57 [INFO] Proxy credentials loaded successfully
+2025-03-10 18:42:57 [INFO] Getting proxy info for server: pool.proxy.market:10000
+2025-03-10 18:42:57 [INFO] Successfully got proxy info for IP: 37.201.241.72
+2025-03-10 18:42:58 [INFO] Getting proxy info for server: pool.proxy.market:10001
+2025-03-10 18:42:58 [INFO] Successfully got proxy info for IP: 37.201.6.173
+2025-03-10 18:42:58 [INFO] Found suitable proxy with IP: 37.201.6.173
+2025-03-10 18:42:58 [INFO] Country configuration loaded successfully
+2025-03-10 18:42:58 [INFO] Country configuration created successfully
+2025-03-10 18:42:58 [INFO] Creating configuration for system: Win64, browser: Edge
+2025-03-10 18:42:58 [INFO] Configuration created successfully
+2025-03-10 18:42:58 [INFO] Browser closed successfully
+2025-03-10 18:43:00 [INFO] Browser started successfully
+2025-03-10 18:43:00 [INFO] Updating configuration display
+2025-03-10 18:43:00 [INFO] Updating configuration display
+2025-03-10 18:43:00 [INFO] Configuration display updated
+2025-03-10 18:49:53 [INFO] Exiting application
+2025-03-10 18:49:53 [INFO] Closing browser

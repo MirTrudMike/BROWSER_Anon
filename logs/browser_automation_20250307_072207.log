@@ -1,0 +1,129 @@
+2025-03-07 07:22:07 [INFO] Country configuration loaded successfully
+2025-03-07 07:22:07 [INFO] Loaded 9 countries
+2025-03-07 07:22:07 [INFO] Starting Browser Launcher application
+2025-03-07 07:22:07 [INFO] Initializing Browser Launcher application
+2025-03-07 07:22:07 [INFO] Browser Launcher initialized successfully
+2025-03-07 07:22:07 [INFO] Asyncio event loop started in background thread
+2025-03-07 07:22:07 [INFO] Application window shown
+2025-03-07 07:22:12 [INFO] Country selected: 🇬🇪 Georgia
+2025-03-07 07:22:14 [INFO] Launching browser for country: ge
+2025-03-07 07:22:14 [INFO] Starting browser launch process for country: ge
+2025-03-07 07:22:14 [INFO] Starting browser for country: ge
+2025-03-07 07:22:14 [INFO] Getting configuration for country: ge
+2025-03-07 07:22:14 [INFO] Finding proxy for country: ge
+2025-03-07 07:22:14 [INFO] Proxy credentials loaded successfully
+2025-03-07 07:22:14 [INFO] Getting proxy info for server: pool.proxy.market:10000
+2025-03-07 07:22:15 [INFO] Successfully got proxy info for IP: 134.19.240.151
+2025-03-07 07:22:15 [INFO] Found suitable proxy with IP: 134.19.240.151
+2025-03-07 07:22:15 [INFO] Country configuration loaded successfully
+2025-03-07 07:22:15 [INFO] Country configuration created successfully
+2025-03-07 07:22:15 [INFO] Creating configuration for system: MacIntel, browser: Chrome
+2025-03-07 07:22:15 [INFO] Configuration created successfully
+2025-03-07 07:22:16 [INFO] Browser started successfully
+2025-03-07 07:22:16 [INFO] Updating configuration display
+2025-03-07 07:22:16 [INFO] Updating configuration display
+2025-03-07 07:22:16 [INFO] Configuration display updated
+2025-03-07 07:25:20 [INFO] Refreshing browser for country: ge
+2025-03-07 07:25:20 [INFO] Closing browser
+2025-03-07 07:25:20 [INFO] Starting browser launch process for country: ge
+2025-03-07 07:25:20 [INFO] Starting browser for country: ge
+2025-03-07 07:25:20 [INFO] Getting configuration for country: ge
+2025-03-07 07:25:20 [INFO] Finding proxy for country: ge
+2025-03-07 07:25:20 [INFO] Proxy credentials loaded successfully
+2025-03-07 07:25:20 [INFO] Getting proxy info for server: pool.proxy.market:10000
+2025-03-07 07:25:21 [INFO] Successfully got proxy info for IP: 134.19.240.151
+2025-03-07 07:25:22 [INFO] Getting proxy info for server: pool.proxy.market:10001
+2025-03-07 07:25:22 [INFO] Successfully got proxy info for IP: 31.146.76.2
+2025-03-07 07:25:22 [INFO] Found suitable proxy with IP: 31.146.76.2
+2025-03-07 07:25:22 [INFO] Country configuration loaded successfully
+2025-03-07 07:25:22 [INFO] Country configuration created successfully
+2025-03-07 07:25:22 [INFO] Creating configuration for system: Linux x86_64, browser: Firefox
+2025-03-07 07:25:22 [INFO] Configuration created successfully
+2025-03-07 07:25:22 [INFO] Browser closed successfully
+2025-03-07 07:25:25 [INFO] Browser started successfully
+2025-03-07 07:25:25 [INFO] Updating configuration display
+2025-03-07 07:25:25 [INFO] Updating configuration display
+2025-03-07 07:25:25 [INFO] Configuration display updated
+2025-03-08 23:36:47 [INFO] Launching browser for country: ge
+2025-03-08 23:36:47 [INFO] Closing browser
+2025-03-08 23:36:47 [INFO] Starting browser launch process for country: ge
+2025-03-08 23:36:47 [INFO] Starting browser for country: ge
+2025-03-08 23:36:47 [INFO] Getting configuration for country: ge
+2025-03-08 23:36:47 [INFO] Finding proxy for country: ge
+2025-03-08 23:36:47 [INFO] Proxy credentials loaded successfully
+2025-03-08 23:36:47 [INFO] Getting proxy info for server: pool.proxy.market:10000
+2025-03-08 23:36:48 [INFO] Successfully got proxy info for IP: 188.169.6.178
+2025-03-08 23:36:48 [INFO] Found suitable proxy with IP: 188.169.6.178
+2025-03-08 23:36:48 [INFO] Country configuration loaded successfully
+2025-03-08 23:36:48 [INFO] Country configuration created successfully
+2025-03-08 23:36:48 [INFO] Creating configuration for system: Win64, browser: Firefox
+2025-03-08 23:36:48 [INFO] Configuration created successfully
+2025-03-08 23:36:48 [INFO] Browser closed successfully
+2025-03-08 23:36:53 [INFO] Browser started successfully
+2025-03-08 23:36:53 [INFO] Updating configuration display
+2025-03-08 23:36:53 [INFO] Updating configuration display
+2025-03-08 23:36:53 [INFO] Configuration display updated
+2025-03-08 23:45:58 [INFO] Launching browser for country: ge
+2025-03-08 23:45:58 [INFO] Closing browser
+2025-03-08 23:45:58 [INFO] Starting browser launch process for country: ge
+2025-03-08 23:45:58 [INFO] Starting browser for country: ge
+2025-03-08 23:45:58 [INFO] Getting configuration for country: ge
+2025-03-08 23:45:58 [INFO] Finding proxy for country: ge
+2025-03-08 23:45:58 [INFO] Proxy credentials loaded successfully
+2025-03-08 23:45:58 [INFO] Getting proxy info for server: pool.proxy.market:10000
+2025-03-08 23:45:58 [INFO] Successfully got proxy info for IP: 188.169.6.178
+2025-03-08 23:45:59 [INFO] Getting proxy info for server: pool.proxy.market:10001
+2025-03-08 23:46:05 [INFO] Launching browser for country: ge
+2025-03-08 23:46:05 [ERROR] Error making request to ip-api.com with proxy pool.proxy.market:10001 Error: 503 Server Error: Service Unavailable for url: http://ip-api.com/json/
+Traceback:
+  File "/home/mirtrudmike/Projects/BROWSER/testing.py", line 93, in get_proxy_info
+    response.raise_for_status()  # Проверка на ошибки HTTP
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/mirtrudmike/Projects/BROWSER/.venv/lib/python3.13/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+
+2025-03-08 23:46:05 [INFO] Getting proxy info for server: pool.proxy.market:10003
+2025-03-08 23:46:06 [INFO] Successfully got proxy info for IP: 62.212.32.26
+2025-03-08 23:46:06 [INFO] Found suitable proxy with IP: 62.212.32.26
+2025-03-08 23:46:06 [INFO] Country configuration loaded successfully
+2025-03-08 23:46:06 [INFO] Country configuration created successfully
+2025-03-08 23:46:06 [INFO] Creating configuration for system: Win64, browser: Firefox
+2025-03-08 23:46:06 [INFO] Configuration created successfully
+2025-03-08 23:46:06 [INFO] Closing browser
+2025-03-08 23:46:06 [INFO] Starting browser launch process for country: ge
+2025-03-08 23:46:06 [INFO] Starting browser for country: ge
+2025-03-08 23:46:06 [INFO] Getting configuration for country: ge
+2025-03-08 23:46:06 [INFO] Finding proxy for country: ge
+2025-03-08 23:46:06 [INFO] Proxy credentials loaded successfully
+2025-03-08 23:46:06 [INFO] Getting proxy info for server: pool.proxy.market:10000
+2025-03-08 23:46:07 [INFO] Successfully got proxy info for IP: 188.169.6.178
+2025-03-08 23:46:08 [INFO] Getting proxy info for server: pool.proxy.market:10001
+2025-03-08 23:46:14 [ERROR] Error making request to ip-api.com with proxy pool.proxy.market:10001 Error: 503 Server Error: Service Unavailable for url: http://ip-api.com/json/
+Traceback:
+  File "/home/mirtrudmike/Projects/BROWSER/testing.py", line 93, in get_proxy_info
+    response.raise_for_status()  # Проверка на ошибки HTTP
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/mirtrudmike/Projects/BROWSER/.venv/lib/python3.13/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+
+2025-03-08 23:46:14 [INFO] Getting proxy info for server: pool.proxy.market:10003
+2025-03-08 23:46:15 [INFO] Successfully got proxy info for IP: 62.212.32.26
+2025-03-08 23:46:16 [INFO] Getting proxy info for server: pool.proxy.market:10006
+2025-03-08 23:46:16 [INFO] Successfully got proxy info for IP: 212.58.103.27
+2025-03-08 23:46:16 [INFO] Found suitable proxy with IP: 212.58.103.27
+2025-03-08 23:46:16 [INFO] Country configuration loaded successfully
+2025-03-08 23:46:16 [INFO] Country configuration created successfully
+2025-03-08 23:46:16 [INFO] Creating configuration for system: MacIntel, browser: Edge
+2025-03-08 23:46:16 [INFO] Configuration created successfully
+2025-03-08 23:46:16 [INFO] Browser closed successfully
+2025-03-08 23:46:16 [INFO] Browser closed successfully
+2025-03-08 23:46:17 [INFO] Browser started successfully
+2025-03-08 23:46:17 [INFO] Updating configuration display
+2025-03-08 23:46:17 [INFO] Updating configuration display
+2025-03-08 23:46:17 [INFO] Configuration display updated
+2025-03-08 23:46:18 [INFO] Browser started successfully
+2025-03-08 23:46:18 [INFO] Updating configuration display
+2025-03-08 23:46:18 [INFO] Updating configuration display
+2025-03-08 23:46:18 [INFO] Configuration display updated
+2025-03-09 01:42:22 [INFO] Exiting application
+2025-03-09 01:42:22 [INFO] Closing browser

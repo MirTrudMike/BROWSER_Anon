@@ -1,0 +1,27 @@
+2025-03-12 10:05:18 [INFO] Country configuration loaded successfully
+2025-03-12 10:05:18 [INFO] Loaded 10 countries
+2025-03-12 10:05:18 [INFO] Starting Browser Launcher application
+2025-03-12 10:05:18 [INFO] Initializing Browser Launcher application
+2025-03-12 10:05:18 [INFO] Browser Launcher initialized successfully
+2025-03-12 10:05:18 [INFO] Asyncio event loop started in background thread
+2025-03-12 10:05:20 [INFO] Application window shown
+2025-03-12 10:06:49 [INFO] Country selected: 🇬🇪 Georgia
+2025-03-12 10:06:51 [INFO] Launching browser for country: ge
+2025-03-12 10:06:51 [INFO] Starting browser launch process for country: ge
+2025-03-12 10:06:51 [INFO] Starting browser for country: ge
+2025-03-12 10:06:51 [INFO] Getting configuration for country: ge
+2025-03-12 10:06:51 [INFO] Finding proxy for country: ge
+2025-03-12 10:06:51 [INFO] Proxy credentials loaded successfully
+2025-03-12 10:06:51 [INFO] Getting proxy info for server: pool.proxy.market:10000
+2025-03-12 10:06:51 [INFO] Successfully got proxy info for IP: 188.169.57.194
+2025-03-12 10:06:51 [INFO] Found suitable proxy with IP: 188.169.57.194
+2025-03-12 10:06:51 [INFO] Country configuration loaded successfully
+2025-03-12 10:06:51 [INFO] Country configuration created successfully
+2025-03-12 10:06:51 [INFO] Creating configuration for system: Win64, browser: Edge
+2025-03-12 10:06:51 [INFO] Configuration created successfully
+2025-03-12 10:06:54 [INFO] Browser started successfully
+2025-03-12 10:06:54 [INFO] Updating configuration display
+2025-03-12 10:06:54 [INFO] Updating configuration display
+2025-03-12 10:06:54 [INFO] Configuration display updated
+2025-03-12 10:28:43 [INFO] Exiting application
+2025-03-12 10:28:43 [INFO] Closing browser

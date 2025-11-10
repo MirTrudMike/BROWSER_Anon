@@ -1,0 +1,27 @@
+2025-03-21 17:46:47 [INFO] Country configuration loaded successfully
+2025-03-21 17:46:47 [INFO] Loaded 10 countries
+2025-03-21 17:46:47 [INFO] Starting Browser Launcher application
+2025-03-21 17:46:47 [INFO] Initializing Browser Launcher application
+2025-03-21 17:46:47 [INFO] Browser Launcher initialized successfully
+2025-03-21 17:46:47 [INFO] Asyncio event loop started in background thread
+2025-03-21 17:46:47 [INFO] Application window shown
+2025-03-21 17:46:52 [INFO] Country selected: 🇦🇪 UAE
+2025-03-21 17:46:56 [INFO] Launching browser for country: ae
+2025-03-21 17:46:56 [INFO] Starting browser launch process for country: ae
+2025-03-21 17:46:56 [INFO] Starting browser for country: ae
+2025-03-21 17:46:56 [INFO] Getting configuration for country: ae
+2025-03-21 17:46:56 [INFO] Finding proxy for country: ae
+2025-03-21 17:46:56 [INFO] Proxy credentials loaded successfully
+2025-03-21 17:46:56 [INFO] Getting proxy info for server: pool.proxy.market:10000
+2025-03-21 17:46:57 [INFO] Successfully got proxy info for IP: 217.165.249.11
+2025-03-21 17:46:57 [INFO] Found suitable proxy with IP: 217.165.249.11
+2025-03-21 17:46:57 [INFO] Country configuration loaded successfully
+2025-03-21 17:46:57 [INFO] Country configuration created successfully
+2025-03-21 17:46:57 [INFO] Creating configuration for system: Linux x86_64, browser: Firefox
+2025-03-21 17:46:57 [INFO] Configuration created successfully
+2025-03-21 17:47:00 [INFO] Browser started successfully
+2025-03-21 17:47:00 [INFO] Updating configuration display
+2025-03-21 17:47:00 [INFO] Updating configuration display
+2025-03-21 17:47:00 [INFO] Configuration display updated
+2025-03-21 17:47:50 [INFO] Exiting application
+2025-03-21 17:47:50 [INFO] Closing browser
