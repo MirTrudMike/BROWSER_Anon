@@ -1,6 +1,18 @@
-.venv
-proxies.json
-.idea
+# Python
 __pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+
+# Credentials & sensitive data
+proxies.json
 used_ips.json
-logs
+
+# Logs
+logs/
+
+# IDE
+.claude
+.idea/
+.vscode/
