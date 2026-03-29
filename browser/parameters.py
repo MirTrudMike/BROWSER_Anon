@@ -214,22 +214,22 @@ plugins_variants = {
 # Canvas 2D rendering parameters per platform
 canvas_2d_variants = {
     "Win64": [
-        {"font": "12px Arial",     "textBaseline": "alphabetic", "fillStyle": "#000000", "quality": 0.92},
-        {"font": "14px Helvetica", "textBaseline": "top",        "fillStyle": "#242424", "quality": 0.95},
-        {"font": "16px Segoe UI",  "textBaseline": "middle",     "fillStyle": "#121212", "quality": 0.88},
-        {"font": "13px Verdana",   "textBaseline": "bottom",     "fillStyle": "#1a1a1a", "quality": 0.90},
+        {"red": 2, "green": 3, "blue": 4, "font": "12px Arial",     "textBaseline": "alphabetic", "fillStyle": "#000000", "quality": 0.92},
+        {"red": 1, "green": 4, "blue": 7, "font": "14px Helvetica", "textBaseline": "top",        "fillStyle": "#242424", "quality": 0.95},
+        {"red": 3, "green": 1, "blue": 5, "font": "16px Segoe UI",  "textBaseline": "middle",     "fillStyle": "#121212", "quality": 0.88},
+        {"red": 5, "green": 2, "blue": 6, "font": "13px Verdana",   "textBaseline": "bottom",     "fillStyle": "#1a1a1a", "quality": 0.90},
     ],
     "MacIntel": [
-        {"font": "12px -apple-system",  "textBaseline": "alphabetic", "fillStyle": "#000000", "quality": 0.92},
-        {"font": "14px San Francisco",  "textBaseline": "top",        "fillStyle": "#242424", "quality": 0.95},
-        {"font": "16px Helvetica Neue", "textBaseline": "middle",     "fillStyle": "#121212", "quality": 0.88},
-        {"font": "13px Arial",          "textBaseline": "bottom",     "fillStyle": "#1a1a1a", "quality": 0.90},
+        {"red": 1, "green": 5, "blue": 3, "font": "12px -apple-system",  "textBaseline": "alphabetic", "fillStyle": "#000000", "quality": 0.92},
+        {"red": 4, "green": 2, "blue": 6, "font": "14px San Francisco",  "textBaseline": "top",        "fillStyle": "#242424", "quality": 0.95},
+        {"red": 2, "green": 6, "blue": 1, "font": "16px Helvetica Neue", "textBaseline": "middle",     "fillStyle": "#121212", "quality": 0.88},
+        {"red": 6, "green": 3, "blue": 4, "font": "13px Arial",          "textBaseline": "bottom",     "fillStyle": "#1a1a1a", "quality": 0.90},
     ],
     "Linux x86_64": [
-        {"font": "12px Ubuntu",          "textBaseline": "alphabetic", "fillStyle": "#000000", "quality": 0.92},
-        {"font": "14px Liberation Sans", "textBaseline": "top",        "fillStyle": "#242424", "quality": 0.95},
-        {"font": "16px DejaVu Sans",     "textBaseline": "middle",     "fillStyle": "#121212", "quality": 0.88},
-        {"font": "13px Noto Sans",       "textBaseline": "bottom",     "fillStyle": "#1a1a1a", "quality": 0.90},
+        {"red": 3, "green": 5, "blue": 2, "font": "12px Ubuntu",          "textBaseline": "alphabetic", "fillStyle": "#000000", "quality": 0.92},
+        {"red": 1, "green": 3, "blue": 6, "font": "14px Liberation Sans", "textBaseline": "top",        "fillStyle": "#242424", "quality": 0.95},
+        {"red": 4, "green": 1, "blue": 3, "font": "16px DejaVu Sans",     "textBaseline": "middle",     "fillStyle": "#121212", "quality": 0.88},
+        {"red": 2, "green": 4, "blue": 5, "font": "13px Noto Sans",       "textBaseline": "bottom",     "fillStyle": "#1a1a1a", "quality": 0.90},
     ],
 }
 

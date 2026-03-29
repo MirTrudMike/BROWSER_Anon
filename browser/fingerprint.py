@@ -1,5 +1,5 @@
 import hashlib
-import time
+import secrets
 
 from .logger import logger
 from .parameters import (
@@ -137,8 +137,7 @@ class FingerprintGenerator:
 
     def _generate_session_hash(self) -> str:
         try:
-            current_time = str(time.time()).encode("utf-8")
-            session_hash = hashlib.md5(current_time).hexdigest()
+            session_hash = secrets.token_hex(32)
             logger.debug(f"Generated session hash: {session_hash}")
             return session_hash
         except Exception as e:

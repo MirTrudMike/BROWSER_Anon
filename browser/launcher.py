@@ -253,14 +253,16 @@ class ScriptInjector:
     @staticmethod
     async def inject_battery(page: Page, battery: dict):
         """Emulate Battery API with configured state values."""
+        charging_time    = 'Infinity' if battery['chargingTime']    is None else battery['chargingTime']
+        discharging_time = 'Infinity' if battery['dischargingTime'] is None else battery['dischargingTime']
         await page.add_init_script(f"""
         (() => {{
             navigator.getBattery = function() {{
                 return new Promise((resolve) => {{
                     resolve({{
                         charging: {str(battery['charging']).lower()},
-                        chargingTime: {battery['chargingTime']},
-                        dischargingTime: {battery['dischargingTime']},
+                        chargingTime: {charging_time},
+                        dischargingTime: {discharging_time},
                         level: {battery['level']}
                     }});
                 }});
@@ -373,25 +375,14 @@ class ScriptInjector:
             const originalGetComputedStyle = window.getComputedStyle;
             window.getComputedStyle = function(element, pseudoElement) {{
                 const computedStyle = originalGetComputedStyle.apply(this, [element, pseudoElement]);
-                if (computedStyle.fontFamily) {{
-                    computedStyle.fontFamily = fakeFonts.join(', ');
-                }}
-                return computedStyle;
+                return new Proxy(computedStyle, {{
+                    get(target, prop) {{
+                        if (prop === 'fontFamily') return fakeFonts.join(', ');
+                        const val = target[prop];
+                        return typeof val === 'function' ? val.bind(target) : val;
+                    }}
+                }});
             }};
-
-            const originalAdd = Document.prototype.fonts.add;
-            Document.prototype.fonts.add = function(font) {{
-                console.log(`Font added: ${{font.family}}`);
-                originalAdd.call(this, font);
-            }};
-
-            const originalMatch = FontFace.prototype.load;
-            FontFace.prototype.load = function() {{
-                const fakeFont = new FontFace('FakeFont', 'url(fake-font-url)');
-                return fakeFont.load();
-            }};
-
-            console.log("Font fingerprinting blocked!");
         }})();
         """)
 
