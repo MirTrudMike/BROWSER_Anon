@@ -5,6 +5,7 @@ from playwright.async_api import async_playwright, Browser, Page
 
 from .fingerprint import FingerprintGenerator
 from .logger import logger
+from .profiles import ProfileConfig, STEALTH
 from .proxy import ProxyManager
 
 
@@ -387,23 +388,30 @@ class ScriptInjector:
         """)
 
     @classmethod
-    async def inject_all(cls, page: Page, config: dict, system: str, language: str):
-        """Apply all masking scripts to the page."""
-        logger.debug("Injecting all masking scripts...")
-        await cls.inject_base_masking(page)
-        await cls.inject_hardware(page, config)
-        await cls.inject_webrtc(page, config["local_ip_set"])
-        await cls.inject_webgl(page, config["webgl"])
-        await cls.inject_canvas(page, config["canvas"])
-        await cls.inject_audio(page, config["audio"])
-        await cls.inject_battery(page, config["battery"])
-        await cls.inject_usb(page, config["usb"])
-        await cls.inject_plugins(page, config["plugins"])
-        await cls.inject_platform(page, system)
-        await cls.inject_language(page, language)
-        await cls.inject_canvas_2d(page, config["canvas_2d"])
-        await cls.inject_fonts(page, config["fonts"])
-        logger.debug("All masking scripts injected")
+    async def inject_all(
+        cls,
+        page: Page,
+        config: dict,
+        system: str,
+        language: str,
+        profile: ProfileConfig = STEALTH,
+    ):
+        """Apply masking scripts selected by the given profile."""
+        logger.debug(f"Injecting scripts (profile: {profile})")
+        if profile.base_masking: await cls.inject_base_masking(page)
+        if profile.hardware:     await cls.inject_hardware(page, config)
+        if profile.webrtc:       await cls.inject_webrtc(page, config["local_ip_set"])
+        if profile.webgl:        await cls.inject_webgl(page, config["webgl"])
+        if profile.canvas:       await cls.inject_canvas(page, config["canvas"])
+        if profile.audio:        await cls.inject_audio(page, config["audio"])
+        if profile.battery:      await cls.inject_battery(page, config["battery"])
+        if profile.usb:          await cls.inject_usb(page, config["usb"])
+        if profile.plugins:      await cls.inject_plugins(page, config["plugins"])
+        if profile.platform:     await cls.inject_platform(page, system)
+        if profile.language:     await cls.inject_language(page, language)
+        if profile.canvas_2d:    await cls.inject_canvas_2d(page, config["canvas_2d"])
+        if profile.fonts:        await cls.inject_fonts(page, config["fonts"])
+        logger.debug("Scripts injected")
 
 
 # ===========================================================================
@@ -445,7 +453,11 @@ class BrowserLauncher:
     # Public API
     # ------------------------------------------------------------------
 
-    async def start(self, country: str) -> tuple[Browser, dict] | tuple[None, None]:
+    async def start(
+        self,
+        country: str,
+        profile: ProfileConfig = STEALTH,
+    ) -> tuple[Browser, dict] | tuple[None, None]:
         """
         Launch a browser for the given country code.
         Returns (browser, country_config) or (None, None) on failure.
@@ -508,7 +520,7 @@ class BrowserLauncher:
             logger.debug("Creating new page...")
             page = await context.new_page()
 
-            await ScriptInjector.inject_all(page, fingerprint, system, language)
+            await ScriptInjector.inject_all(page, fingerprint, system, language, profile)
 
             logger.info("Browser started successfully")
             return self._browser, country_config
