@@ -23,6 +23,8 @@ def main():
     )
 
     app = QApplication(sys.argv)
+    app.setApplicationName("Ember Browser")
+    app.setDesktopFileName("ember-browser")
     window = BrowserLauncherApp(launcher)
 
     def run_asyncio_loop():
