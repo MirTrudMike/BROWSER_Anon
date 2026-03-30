@@ -6,6 +6,7 @@ __pycache__/
 venv/
 
 # Credentials & sensitive data
+.env
 proxies.json
 used_ips.json
 

@@ -1,9 +1,13 @@
 import json
+import os
 import time
 
 import requests
+from dotenv import load_dotenv
 
 from .logger import logger
+
+load_dotenv()
 
 
 class ProxyManager:
@@ -16,7 +20,7 @@ class ProxyManager:
 
     PROXY_SERVER     = "pool.proxy.market"
     PROXY_PORT_START = 10000
-    PROXY_PASSWORD   = "RNW78Fm5"
+    PROXY_PASSWORD   = os.environ["PROXY_PASSWORD"]
     MAX_ATTEMPTS     = 1000
 
     def __init__(self, proxies_file: str, used_ips_file: str):
